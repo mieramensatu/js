@@ -2,7 +2,7 @@ import { setInner } from "https://jscroot.github.io/element/croot.js";
 setInner("demo","Gading Khairlambang");
 
 import { onClick } from "https://jscroot.github.io/element/croot.js";
-onClick("tombol",aktif)
+onClick("klik",aktif)
 
 function aktif(){
     alert("udah aktif")
@@ -16,4 +16,4 @@ function ubahTeks(){
     }
 }
 
-document.getElementById("klik").addEventListener("click", ubahTeks)
+document.getElementById("tombol").addEventListener("click", ubahTeks)
