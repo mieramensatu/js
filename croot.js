@@ -8,8 +8,14 @@ function aktif(){
     alert("udah aktif")
 }
 
-function container(){
-    return document.getElementById()
+import { container } from "https://jscroot.github.io/element/croot.js";
+
+function container(id){
+    return document.getElementById(id)
 }
 var elemen = container("myDiv")
-elemen.textContent = "Teks ini telah diubah dengan JavaScript!"
+if (elemen){
+    elemen.textContent = "Teks ini telah diubah dengan JavaScript!"    
+} else {
+    console,error("Elemen dengan ID 'myDiv' tidak ditemukan.")
+}
