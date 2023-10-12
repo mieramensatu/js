@@ -7,3 +7,6 @@ onClick("tombol",aktif)
 function aktif(){
     alert("udah aktif")
 }
+
+var elemen = container("myDiv")
+elemen.textContent = "Teks ini telah diubah dengan JavaScript!"
