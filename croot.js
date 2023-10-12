@@ -8,5 +8,8 @@ function aktif(){
     alert("udah aktif")
 }
 
+function container(){
+    return document.getElementById()
+}
 var elemen = container("myDiv")
 elemen.textContent = "Teks ini telah diubah dengan JavaScript!"
