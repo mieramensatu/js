@@ -7,21 +7,10 @@
   </head>
   <body>
     <p id="demo"></p>
+    <script type="module" src="croot.js"></script>
     <button id="tombol">Klik tombol</button>
+    <h1>container</h1>
     <div id="myDiv">Ini adalah elemen div dengan ID "myDiv"</div>
-    <script type="module">
-      import { container } from "https://jscroot.github.io/element/croot.js";
-
-      // Fungsi untuk mengubah teks elemen "myDiv"
-      function ubahTeks() {
-        var elemen = container("myDiv");
-        if (elemen) {
-          elemen.textContent = "Teks ini telah diubah dengan JavaScript!";
-        }
-      }
-
-      // Mengaitkan fungsi ubahTeks dengan klik tombol
-      document.getElementById("tombol").addEventListener("click", ubahTeks);
-    </script>
+    <button id="klik">Klik tombol</button>
   </body>
 </html>

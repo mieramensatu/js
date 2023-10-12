@@ -1,21 +1,20 @@
 import { setInner } from "https://jscroot.github.io/element/croot.js";
-setInner("demo","Gading Khairlambang");
+setInner("demo", "Gading Khairlambang");
 
 import { onClick } from "https://jscroot.github.io/element/croot.js";
-onClick("tombol",aktif)
+onClick("tombol", aktif);
 
-function aktif(){
-    alert("udah aktif")
+function aktif() {
+  alert("udah aktif");
 }
 
 import { container } from "https://jscroot.github.io/element/croot.js";
 
-function container(id){
-    return document.getElementById(id)
+function container() {
+  var elemen = container("myDiv");
+  if (element) {
+    element.textContent = "Teks ini telah diubah dengan JavaScript!";
+  }
 }
-var elemen = container("myDiv")
-if (elemen){
-    elemen.textContent = "Teks ini telah diubah dengan JavaScript!"    
-} else {
-    console,error("Elemen dengan ID 'myDiv' tidak ditemukan.")
-}
+
+document.getElementById("klik").addEventListener("click", container);
