@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contoh Website dengan croot.js</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="demo"></p>
-    <script type="module" src="croot.js"></script>
-    <button id="klik">Klik</button>
-    <br>
-    <button id="tombol">klik tombol</button>
-    <div id="myDiv">Ini adalah element dari div dengan ID "myDiv"</div>
+    <h1>Website dengan croot.js</h1>
+
+    <div id="myDiv">
+        <p>Ini adalah elemen div dengan ID "myDiv".</p>
+    </div>
+
+    <button id="showButton">Tampilkan</button>
+    <button id="hideButton">Sembunyikan</button>
+
+    <script type="module">
+        import {
+            container,
+            onClick,
+            show,
+            hide
+        } from "https://jscroot.github.io/element/croot.js";
+
+        // Menggunakan container untuk mendapatkan elemen
+        const myDiv = container("myDiv");
+
+        // Mengaitkan fungsi untuk menampilkan dan menyembunyikan div
+        onClick("showButton", function() {
+            show("myDiv");
+        });
+
+        onClick("hideButton", function() {
+            hide("myDiv");
+        });
+    </script>
 </body>
 </html>
