@@ -24,15 +24,13 @@
             hide
         } from "https://jscroot.github.io/element/croot.js";
 
-        // Menggunakan container untuk mendapatkan elemen
         const myDiv = container("myDiv");
 
-        // Mengaitkan fungsi untuk menampilkan dan menyembunyikan div
         onClick("showButton", function() {
             show("myDiv");
         });
 
-        onClick("hideButton", function() {
+        onClick("showButton", function() {
             hide("myDiv");
         });
     </script>
