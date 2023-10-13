@@ -8,31 +8,12 @@
 </head>
 <body>
     <h1>Website dengan croot.js</h1>
-
+    <div class="demo"></div>
+    <button class="klik">klik disini</button>    
     <div id="myDiv">
         <p>Ini adalah elemen div dengan ID "myDiv".</p>
     </div>
 
-    <button id="showButton">Tampilkan</button>
-    <button id="hideButton">Sembunyikan</button>
-
-    <script type="module">
-        import {
-            container,
-            onClick,
-            show,
-            hide
-        } from "https://jscroot.github.io/element/croot.js";
-
-        const myDiv = container("myDiv");
-
-        onClick("showButton", function() {
-            show("myDiv");
-        });
-
-        onClick("showButton", function() {
-            hide("myDiv");
-        });
-    </script>
+    <script type="module" src="croot.js"></script>
 </body>
 </html>
