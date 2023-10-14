@@ -7,3 +7,8 @@ onClick("tombol",aktif)
 function aktif(){
     alert("udah aktif")
 }
+
+import { container } from "https://jscroot.github.io/element/croot.js";
+
+const myDiv = container("myDiv")
+console,log(myElement.textContent);
