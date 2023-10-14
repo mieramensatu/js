@@ -7,11 +7,8 @@ function container(id){
     return document.getElementById(id);
 }
 const demoElement = container("demo")
-demoElement.innerHTML = "apakek"
-
-const tombol = container("tombol");
-tombol.onClick = aktif;
-
+demoElement.innerHTML = "Gading Khairlambang"
+onClick("tombol", aktif);
 function aktif() {
   alert("udah aktif");
 }
