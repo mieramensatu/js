@@ -11,4 +11,4 @@ function aktif(){
 import { container } from "https://jscroot.github.io/element/croot.js";
 
 const myDiv = container("myDiv")
-console,log(myElement.textContent);
+myDiv.innerHTML = "Ini adalah konten baru untuk elemen dengan ID 'myDiv'";
