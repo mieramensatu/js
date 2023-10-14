@@ -7,7 +7,7 @@ function container(id){
     return document.getElementById(id);
 }
 const demoElement = container("demo")
-demoElement.innerHTML = "Gading Khairlambang"
+demoElement.innerHTML = "apakek"
 
 onClick("tombol", aktif);
 function aktif() {
