@@ -9,7 +9,9 @@ function container(id){
 const demoElement = container("demo")
 demoElement.innerHTML = "apakek"
 
-onClick("tombol", aktif);
+const tombol = container("tombol");
+tombol.onClick = aktif;
+
 function aktif() {
   alert("udah aktif");
 }
