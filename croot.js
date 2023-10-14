@@ -8,6 +8,7 @@ function container(id){
 }
 const demoElement = container("demo")
 demoElement.innerHTML = "Gading Khairlambang"
+
 onClick("tombol", aktif);
 function aktif() {
   alert("udah aktif");
